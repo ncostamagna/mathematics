@@ -128,28 +128,28 @@ Suma de los elementos de la diagonal principal
 
 ## Propiedades de matrices
 
-#### Conmutativa
+### Conmutativa
     A + B = B + A
 
-#### Asociativa
+### Asociativa
     (A + B) + C = A + (B + C)
 
-#### Elemento Neutro de la suma
+### Elemento Neutro de la suma
 **Matriz nula** sumada con otra cualquiera da la propia matriz
     A + 0 = 0 + A = A
 
-#### Opuesta
+### Opuesta
     A + (-A) = (-A) + A = 0
 
 ![calc](images/2.png)<br />
 
-#### Asociativa
+### Asociativa
     (AB)C = A(BC)
 
-#### Distributiva
+### Distributiva
     A(B+C) = AB + AC
 
-#### Elemento Neutro o Unidad
+### Elemento Neutro o Unidad
 Multiplicada por la Identidad<br />
 ![calc](https://latex.codecogs.com/png.latex?\\&space;AI_{n}&space;=&space;A&space;)<br />
 ![calc](https://latex.codecogs.com/png.latex?\\&space;I_{n}B&space;=&space;B)<br />
