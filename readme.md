@@ -151,5 +151,6 @@ Suma de los elementos de la diagonal principal
 
 #### Elemento Neutro o Unidad
 Multiplicada por la Identidad<br />
-![calc](https://latex.codecogs.com/png.latex?\\&space;AI_{n}&space;=&space;A&space;\\&space;I_{n}B&space;=&space;B)<br />
+![calc](https://latex.codecogs.com/png.latex?\\&space;AI_{n}&space;=&space;A&space;)<br />
+![calc](https://latex.codecogs.com/png.latex?\\&space;I_{n}B&space;=&space;B)<br />
 ![calc](images/3.png)<br />
