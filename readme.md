@@ -78,3 +78,39 @@ Cero arriba de la diagonal ( no necesaiamente tiene que ser cuadradda)
     A =  [ 4 4 5 0 ]
          [ 2 3 1 3 ]
          [ 1 2 3 4 ]   
+
+## Operaciones de matrices
+
+#### Suma
+Solo si ambas son del mismo orden
+
+         [ 3  5 -2  0 ]         [ 1 -4  5  2 ] 
+    A =  [ 0  1  2 -1 ]     B = [ 3  2 -4  6 ] 
+         [ 3  2  7  4 ]         [ 1 -3 -5  0 ] 
+
+           [ 3+1 5-4 3-2 2+0 ]     [ 4  1  3  2 ]
+    A+B =  [ 0+3 2+3 2-4 6-1 ]  =  [ 3  3 -2  5 ]
+           [ 3+1 2-3 7-5 4+0 ]     [ 4 -1  2  4 ]
+
+#### Producto de un escalar
+
+    λA = (λ * Aij)MxN
+
+                           [ 1 2 3 ]
+    Dado Lambda = 3 y A =  [ 4 5 6 ]
+
+              [  3  6  9 ]
+    λA = 3A = [ 12 15 18 ]
+
+#### Producto con matrices
+Numero de columnas de **A** tiene que coincidir con el numero de filas de **B**
+
+                                  [  2  1  ]
+         [ -1  2  3  1  ]         [  0  2  ]
+    A =  [  3 -2  1  0  ]     B = [ -1  3  ]
+                                  [  0  1  ] 
+
+Multiplico **filas de A** por **columnas de B**
+
+          [ -1*2+2*0+3*(-1)+1*0 -1*1+2*2+3*3+1*1 ]     [ -5 13  ]
+    AB =  [  3*2-2*0+1*(-1)+0*0  3*1-2*2+1*3+0*1 ]  =  [  5  2  ]
