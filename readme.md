@@ -117,11 +117,9 @@ Multiplico **filas de A** por **columnas de B**
 
 #### Traza
 Suma de los elementos de la diagonal principal
+<br />
 
-         [ A11 A12 ... A1n  ]
-    A =  [ A21 A22 ... A2n  ]
-         [ ... ... ... ...  ]
-         [ An1 An2 ... Ann  ]
+![calc](https://latex.codecogs.com/png.latex?A&space;=&space;\begin{bmatrix}&space;a_{11}&&space;a_{12}&&space;...&&space;a_{1n}&&space;\\&space;a_{21}&&space;a_{22}&&space;...&&space;a_{2n}&&space;\\&space;...&&space;...&&space;...&&space;...&&space;\\&space;a_{n1}&&space;a_{n2}&&space;...&&space;a_{nn}&&space;\\&space;\end{bmatrix})<br />
 
 
 ![calc](https://latex.codecogs.com/png.latex?tr(A)&space;=&space;a_{11}&space;&plus;&space;a_{22}&space;&plus;&space;...&space;&plus;&space;a_{nn}&space;=&space;\sum_{i=1}^{n})<br />
