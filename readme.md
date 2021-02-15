@@ -1,3 +1,8 @@
+# Indice
+- [Matrices](#matrices)
+    - [Tipo de matrices](#tipo-de-matrices)
+
+
 # Matrices
 
                 3
@@ -21,12 +26,14 @@
 
 #### Matriz Nula
 Todos los cocientes son cero
+
     [ 0 0 0 ]
     [ 0 0 0 ]
     [ 0 0 0 ]   
 
 #### Matriz Cuadrada
 Matriz de orden N, columnas coinciden con fila
+
      [ 0 c ]
      [ d f ] 
 
