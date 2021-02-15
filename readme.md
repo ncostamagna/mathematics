@@ -114,3 +114,14 @@ Multiplico **filas de A** por **columnas de B**
 
           [ -1*2+2*0+3*(-1)+1*0 -1*1+2*2+3*3+1*1 ]     [ -5 13  ]
     AB =  [  3*2-2*0+1*(-1)+0*0  3*1-2*2+1*3+0*1 ]  =  [  5  2  ]
+
+#### Traza
+Suma de los elementos de la diagonal principal
+
+         [ A11 A12 ... A1n  ]
+    A =  [ A21 A22 ... A2n  ]
+         [ ... ... ... ...  ]
+         [ An1 An2 ... Ann  ]
+
+
+![calc](https://latex.codecogs.com/png.latex?tr(A)&space;=&space;a_{11}&space;&plus;&space;a_{22}&space;&plus;&space;...&space;&plus;&space;a_{nn}&space;=&space;\sum_{i=1}^{n})<br />
