@@ -1,6 +1,8 @@
 # Indice
 - [Matrices](#matrices)
     - [Tipo de matrices](#tipo-de-matrices)
+    - [Operaciones de matrices](#operaciones-de-matrices)
+    - [Propiedades de matrices](#propiedades-de-matrices)
 
 
 # Matrices
@@ -123,3 +125,31 @@ Suma de los elementos de la diagonal principal
 
 
 ![calc](https://latex.codecogs.com/png.latex?tr(A)&space;=&space;a_{11}&space;&plus;&space;a_{22}&space;&plus;&space;...&space;&plus;&space;a_{nn}&space;=&space;\sum_{i=1}^{n})<br />
+
+## Propiedades de matrices
+
+#### Conmutativa
+    A + B = B + A
+
+#### Asociativa
+    (A + B) + C = A + (B + C)
+
+#### Elemento Neutro de la suma
+**Matriz nula** sumada con otra cualquiera da la propia matriz
+    A + 0 = 0 + A = A
+
+#### Opuesta
+    A + (-A) = (-A) + A = 0
+
+![calc](images/2.png)<br />
+
+#### Asociativa
+    (AB)C = A(BC)
+
+#### Distributiva
+    A(B+C) = AB + AC
+
+#### Elemento Neutro o Unidad
+Multiplicada por la Identidad<br />
+![calc](https://latex.codecogs.com/png.latex?\\&space;AI_{n}&space;=&space;A&space;\\&space;I_{n}B&space;=&space;B)<br />
+![calc](images/3.png)<br />
