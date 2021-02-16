@@ -1,0 +1,503 @@
+---
+title: Tema 2 - Ecuaciones y Sistemas Lineales
+author: Juan Gabriel Gomila & María Santos
+output: 
+  ioslides_presentation:
+    widescreen: true
+    css: Mery_style.css
+    logo: Images/matriz_mov.gif
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+# Ecuaciones matriciales
+
+## Ecuaciones matriciales
+
+<l class = "definition"> Ecuación matricial.</l> Ecuación donde la incógnita es una matriz.
+
+Se resuelven transformando la ecuación inicial en otra equivalente utilizando las propiedades y definiciones vistas en el tema anterior.
+
+Para hallar la incógnita necesitamos la matriz inversa
+
+## Ecuaciones matriciales
+
+<div class = "dem">
+
+**Método de resolución**
+
+Dada la ecuación matricial $$XP = Q-R$$
+
+donde $X\in\mathcal{M}_{n}(\mathbb{K})$ es nuestra incógnita y $P,Q,R\in\mathcal{M}_{n}(\mathbb{K})$ son matrices cuadradas conocidas.
+
+Multiplicamos por la derecha en ambos miembros de la igualdad por $P^{-1}$
+
+$$XPP^{-1}=(Q-R)P^{-1}$$
+
+Como $P^{-1}$ es la inversa de $P$, se cumple que $PP^{-1}=I_n$, donde $I_n$ es la matriz identidad de orden $n$. Entonces,
+
+$$XI_n=(Q-R)P^{-1}$$
+
+con lo cual $X=(Q-R)P^{-1}$
+
+</div>
+
+
+## Ecuaciones matriciales{.example}
+
+**Ejemplo 1**
+
+Resolver la ecuación matricial $P+QX=RS-TX$. ¿Qué condiciones tienen que cumplirse para poder hallar $X$?
+
+En primer lugar, intentemos aislar $X$:
+
+$$P+QX=RS-TX$$
+$$QX+TX=RS-P$$
+
+Ahora, podemos sacar factor común $X$,
+
+$$(Q+T)X = RS-P$$
+
+Con lo cuál, para poder hallar $X$, necesitamos que la matriz $(Q+T)$ sea invertible y así poder continuar multiplicando a la izquierda de cada miembro de la igualdad por $(Q+T)^{-1}$,
+
+$$(Q+T)^{-1}(Q+T)X = (Q+T)^{-1}(RS-P)$$
+$$X = (Q+T)^{-1}(RS-P)$$
+
+# Sistemas de ecuaciones lineales
+
+## Sistemas de ecuaciones lineales
+
+<l class = "definition">Sistema de $m$ ecuaciones con $n$ incógnitas.</l> Es un sistema de la forma
+
+$$\left\{\begin{matrix}a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n & = & b_1\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n & = & b_2\\
+\vdots & \  & \vdots\\
+a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n & = & b_m\\\end{matrix}\right.$$
+
+donde $a_{ij},b_i\in\mathbb{K},\ i=1,2,\dots,m$ y $j=1,2,\dots,n$
+
+<l class = "definition">Incógnitas.</l> $x_1,x_2,\dots,x_n$
+
+<l class = "definition">Coeficientes del sistema.</l> $a_{ij}\in\mathbb{K}$, $i=1,2,\dots,m$, $j=1,2,\dots,n$
+
+<l class = "definition">Términos independientes.</l> $b_i$, $i = 1,2,\dots,m$
+
+## Sistemas de ecuaciones lineales
+
+<l class = "definition">Sistema homogéneo. </l> Sistema de ecuaciones lineales donde $b_i=0$, $\forall i=1,2,\dots,m$ 
+
+$$\left\{\begin{matrix}a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n & = & 0\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n & = & 0\\
+\vdots & \  & \vdots\\
+a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n & = & 0\\\end{matrix}\right.$$
+
+## Sistemas de ecuaciones lineales
+
+<l class = "definition">Forma matricial de un sistema de ecuaciones lineales.</l> $AX = B$ donde
+
+$$A = \begin{pmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}\\
+\end{pmatrix}\quad X = \begin{pmatrix}x_1\\x_2\\\vdots\\x_m\end{pmatrix}\quad B = \begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}$$
+
+<l class = "definition">Matriz de coeficientes (del sistema).</l> $A$
+
+<l class = "definition">Matriz de términos independientes.</l> $B$
+
+<l class = "definition">Matriz de incógnitas.</l> $X$
+
+## Sistemas de ecuaciones lineales
+
+<l class = "definition">Matriz ampliada del sistema.</l> Dado el sistema matricial $AX = B$, se define la matriz ampliada del sistema como $(A|B)$
+
+$$(A|B) = \begin{pmatrix}a_{11} & a_{12} & \cdots & a_{1n} & | & b_1\\
+a_{21} & a_{22} & \cdots & a_{2n} & | & b_2\\
+\vdots & \vdots & \ddots & \vdots & | & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn} & | & b_m\\
+\end{pmatrix}$$
+
+Cada fila representa la ecuación correspondiente del sistema.
+
+
+## Sistemas de ecuaciones lineales
+
+<l class = "definition">Solució de un sistema de $m$ ecuaciones con $n$ incógnitas.</l> Conjunto de $n$ valores $s_i\in\mathbb{K},\ i=1,2,\dots,n$ tales que al sutituir cada $x_i=s_i$, cada una de las $m$ ecuaciones se convierten en identidades
+
+## Sistemas de ecuaciones lineales
+
+Dado un sistema de $m$ ecuaciones lineales con $n$ incógnitas $AX=B$, podemos clasificar los sistemas según tengan o no solución y, en caso de tener, según cuántas tienen:
+
+<l class = "definition">Sistema compatible.</l> Si tiene al menos una solución
+
+- <l class = "definition">Sistema compatible determinado.</l> Si la solución es única
+- <l class = "definition">Sistema compatible indeterminado.</l> Si tiene infinitas soluciones
+
+<l class = "definition">Sistema incompatible.</l> Si no tiene solución
+
+## Sistemas de ecuaciones lineales
+
+<l class = "observ">Observación. </l> Notemos que un sistema homogéneo, $AX=0$, 
+
+$$\begin{pmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}\\
+\end{pmatrix}\cdot \begin{pmatrix}x_1\\x_2\\\vdots\\x_m\end{pmatrix} = \begin{pmatrix}0\\0\\\vdots\\0\end{pmatrix}$$
+
+siempre tiene, al menos, la <l class = "definition">solución trivial</l>. Es decir, la solución $(0,0,\dots,0)$. 
+
+Con lo cual, el sistema homogéneo siempre es compatible.
+
+## Sistema de ecuaciones lineales
+
+<l class = "prop">Teorema de Rouché-Frobenius.</l> Un sistema de $m$ ecuaciones lineales y $n$ incógnitas, $AX=B$, es compatible si, y solo si, rg$(A)=$rg$(A|B)=r$ y, en este caso:
+
+- Si $r=n$, el sistema es determinado.
+- Si $r<n$, el sistema es indeterminado.
+
+Si rg$(A)<$rg$(A|B)$, entonces el sistema es incompatible.
+
+## Sistemas de ecuaciones lineales
+
+<div class = "example">
+**Ejemplo 2**
+
+Comprobemos si el siguiente sistema lineal tiene solución:
+
+$$\left\{\begin{matrix}
+x_1 &+& x_2 &+& 2x_3 &=& 9\\
+2x_1 &+& 4x_2 &-& 3x_3 &=& 1\\
+3x_1 &+& 6x_2 &-& 5x_3 &=& 0\end{matrix}\right.$$
+
+Observemos que se trata de un sistema $m = 3$ de ecuaciones y $n = 3$ incógnitas.
+
+Para averiguar de qué tipo de sistema se trata, calculemos rg$(A)$ y rg$(A|B)$, donde
+
+$$A = \begin{pmatrix}
+1&1&2\\
+2&4&-3\\
+3&6&-5
+\end{pmatrix},\qquad(A|B) = \begin{pmatrix}
+1&1&2 &|& 9\\
+2&4&-3 &|& 1\\
+3&6&-5 &|& 0
+\end{pmatrix}$$
+
+Tenemos que rg$(A)=$rg$(A|B)=3$. Por lo tanto, por el Teorema de Rouché-Frobenius, concluimos que el sistema es compatible determinado
+
+</div>
+
+<div class = "exercise">**Ejercicio 1.** Comprobad que, utilizando lo aprendido en el Tema 1, rg$(A)=$rg$(A|B)=3$</div>
+
+## Sistema de ecuaciones lineales
+
+<l class = "definition">Sistemas equivalentes.</l> Los sistemas $AX=B$ y $A'X=B'$ son equivalentes si tienen exactamente el mismo conjunto de soluciones.
+
+De este modo, para resolver sistemas de la forma $AX=B$, empezaremos comparando los rangos de las matrices $A$ y $(A|B)$. A continuación, en caso de que ambos rangos sean iguales, procederemos a encontrar una solución utilizando el <l class = "definition">método de Gauss</l>.
+
+
+# El método de Gauss
+
+## El método de Gauss
+
+En el `Tema 1` vimos cómo utilizar el método de Gauss para obtener matrices escalonadas, escalonadas reducidas y calcular el rango de una matriz. 
+
+En este tema, veremos como aplicar dicho método para encontrar las soluciones de los sistemas de ecuaciones lineales.
+
+## El método de Gauss
+
+<l class = "definition">Sistema escalonado.</l> Dado el sistema $AX=B$, se dice que es escalonado si la matriz ampliada $(A|B)$ es escalonada
+
+<l class = "definition">Variables dependientes.</l> Variables que se corresponden con los pivotes
+
+<l class = "definition">Variables independientes.</l> Variables no dependientes
+
+
+## El método de Gauss{.dem}
+
+**Resolver un sistema de ecuaciones lineales**
+
+Los pasos para hallar la solución de un sistema compatible son:
+
+1. Se selecciona la fila que tenga el pivote lo más a la izquierda posible para colocarla como la primera fila
+2. Con el pivote de la primera fila se reducen a 0 todos los elementos que se encuentran por debajo de él
+3. Se repiten los pasos 1 y 2 con la submatriz formada por todas las filas, a excepción de la primera. La nueva matriz que se obtiene tendrá 0's por debajo del pivote de la fila 2.
+4. Se repite el proceso hasta obtener una matriz escalonada.
+
+El objetivo de alcanzar una matriz escalonada por filas equivalente es debido a que una matriz escalonada tiene solución inmediata. 
+
+## Ejemplo 3{.example}
+
+**Ejemplo 3**
+
+Recordemos el sistema del ejemplo anterior: 
+
+$$\left\{\begin{matrix}
+x_1 &+& x_2 &+& 2x_3 &=& 9\\
+2x_1 &+& 4x_2 &-& 3x_3 &=& 1\\
+3x_1 &+& 6x_2 &-& 5x_3 &=& 0\end{matrix}\right.$$
+
+Habíamos concluido que era un sistema compatible determinado. Por tanto, ahora nos interesa calcular su solución, la cual sabemos que es única.
+
+Por otro lado, tenemos que la matriz ampliada del sistema es:
+
+$$(A|B) = \begin{pmatrix}
+1&1&2 &|& 9\\
+2&4&-3 &|& 1\\
+3&6&-5 &|& 0
+\end{pmatrix}$$
+
+## Ejemplo 3{.example}
+
+Nuestro objetivo ahora es utilizar el Método de Gauss para encontrar un sistema equivalente mucho más sencillo de resolver. Para ello, mediante operaciones elementales aplicadas a la matriz ampliada, obtendremos una matriz escalonada por filas de la matriz ampliada del sistema:
+
+1.Eliminamos los coeficientes correspondientes a las variables $x_1$ de las dos últimas filas:
+
+  - A la segunda fila le sumamos la primera multiplicada por -2
+  - A la última fila le sumamos la primera multiplicada por -3
+
+Realizando las operaciones anteriores, obtenemos el sistema equivalente:
+
+$$\begin{pmatrix}
+1&1&2 &|& 9\\
+0&2&-7 &|& -17\\
+0&3&-11 &|& -27
+\end{pmatrix}$$
+
+## Ejemplo 3{.example}
+
+2.Eliminamos los coeficientes respectivos a la variable $x_2$ de la última fila:
+
+- A la última fila de la matriz que acabamos de obtener, le sumamos la segunda multiplicada por $-\frac{3}{2}$
+
+Así, obtenemos:
+
+$$\begin{pmatrix}
+1&1&2 &|& 9\\
+0&2&-7 &|& -17\\
+0&0&-\frac{1}{2} &|& -\frac{3}{2}
+\end{pmatrix}$$
+
+Esta última matriz ampliada que acabamos de obtener es equivalente a la matriz ampliada del sistema de ecuaciones lineales inicial y, lo más interesante de todo, se puede resolver de forma inmediata.
+
+## Ejemplo 3{.example}
+
+El sistema equivalente que acabamos de obtener es
+
+$$\begin{matrix}
+x_1&+&x_2&+&2x_3 &=& 9\\
+&&2x_2&-&7x_3 &=& -17\\
+&&&-&\frac{1}{2}x_3 &=& -\frac{3}{2}
+\end{matrix}$$
+
+De la última ecuación podemos aislar $x_3$ y obtenemos:
+
+$$x_3=3$$
+
+Sustituyendo el valor de $x_3$ en la segunda ecuación y aislando $x_2$ obtenemos
+
+$$2x_2-21=-17$$
+$$x_2 = 2$$
+
+Finalmente, sustituyendo $x_2 = 2$ y $x_3=3$ en la primera ecuación y aislando $x_1$, obtenemos 
+
+$$x_1+2+6 = 9$$
+$$x_1 = 1$$
+
+## Ejemplo 3{.example}
+
+Con lo cual, la única solución del sistema 
+
+
+$$\left\{\begin{matrix}
+x_1 &+& x_2 &+& 2x_3 &=& 9\\
+2x_1 &+& 4x_2 &-& 3x_3 &=& 1\\
+3x_1 &+& 6x_2 &-& 5x_3 &=& 0\end{matrix}\right.$$
+
+es $s = (1,2,3)$
+
+## El método de Gauss
+
+<div class = "exercise">
+
+**Ejercicio 2**
+
+Resolved paso a paso el sistema
+
+$$\left\{\begin{matrix}x_1&+&x_2&&&=&3\\
+&&x_2&+&x_3&=&5\\
+x_1&&&+&x_3&=&4\\
+5x_1&-&x_2&+&x_3&=&6
+\end{matrix}\right.$$
+
+La solución es $s=(1,2,3)$
+
+</div>
+
+## El método de Gauss
+
+Con lo cual, podemos concluir que los sistemas 
+
+$$\left\{\begin{matrix}
+x_1 &+& x_2 &+& 2x_3 &=& 9\\
+2x_1 &+& 4x_2 &-& 3x_3 &=& 1\\
+3x_1 &+& 6x_2 &-& 5x_3 &=& 0\end{matrix}\right.$$
+
+$$\left\{\begin{matrix}x_1&+&x_2&&&=&3\\
+&&x_2&+&x_3&=&5\\
+x_1&&&+&x_3&=&4\\
+5x_1&-&x_2&+&x_3&=&6
+\end{matrix}\right.$$
+
+son equivalentes, ya que tienen el mismo conjunto de soluciones: $\{(1,2,3)\}$
+
+## Ejemplo 4
+
+<div class = "example">
+
+**Ejemplo 4**
+
+Consideremos el sistema 
+$$\left\{\begin{matrix}
+x&+&2y&+&z&+&t&=&0\\
+&&y&+&z&+&t&=&1\\
+2x&+&2y&&&&&=&-2\\
+x&&&-&z&+&t&=&-1\\
+\end{matrix}\right.$$
+
+La matriz ampliada del sistema es:
+
+$$(A|B)=\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+2&2&0&0&|&-2\\
+1&0&-1&1&|&-1
+\end{pmatrix}$$
+</div>
+
+<div class = "exercise">
+**Ejercicio 3.** Comprobar que se trata de un sistema compatible indeterminado. Calculad rg$(A)$ y rg$(A|B)$ para luego aplicar el Teorema de Rouché-Frobenius
+</div>
+
+## Ejemplo 4{.example}
+
+$$(A|B)=\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+2&2&0&0&|&-2\\
+1&0&-1&1&|&-1
+\end{pmatrix}\sim f_3-2f_1\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+0&-2&-2&-2&|&-2\\
+1&0&-1&1&|&-1
+\end{pmatrix}\sim f_4-f_1$$
+$$\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+0&-2&-2&-2&|&-2\\
+0&-2&-2&0&|&-1
+\end{pmatrix}\sim f_3+2f_2\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+0&0&0&0&|&0\\
+0&-2&-2&0&|&-1
+\end{pmatrix}\sim f_4+2f_2$$
+$$\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+0&0&0&0&|&0\\
+0&0&0&2&|&1
+\end{pmatrix}\sim f_3\to f_4\begin{pmatrix}
+1 & 2& 1 & 1& |&0\\
+0 & 1& 1& 1& |&1\\
+0&0&0&2&|&1\\
+0&0&0&0&|&0
+\end{pmatrix}$$
+
+## Ejemplo 4{.example}
+
+Hemos llegado a una matriz escalonada que se corresponde con el sistema
+
+$$\left\{\begin{matrix}
+x &+& 2y&+& z &+& t& =&0\\
+ && y&+& z&+& t& =&1\\
+&&&&&&2t&=&1
+\end{matrix}\right.$$
+
+Con lo cual 
+
+$$t=\frac{1}{2}$$
+$$y+z+\frac{1}{2}=1\Rightarrow y=\frac{1}{2}-z$$
+
+$$x+2\left(\frac{1}{2}-z\right)+z+\frac{1}{2}=0$$
+$$\Rightarrow x-z+\frac{3}{2}=0\Rightarrow x=z-\frac{3}{2}$$
+
+## Ejemplo 4{.example}
+
+En definitiva, las infinitas soluciones de este sistema compatible indeterminado son:
+
+$$\left\{\begin{matrix}x = z-\frac{3}{2}\\
+y = \frac{1}{2}-z\\
+t=\frac{1}{2}\end{matrix}\right.$$
+
+con $z\in\mathbb{R}$
+
+Observad que las variables dependientes (las que se corresponden con los pivotes) son $x,y,t$; mientras que la única variable independiente es la $z$
+
+##Ejemplo 5{.example}
+
+**Ejemplo 5**
+
+Consideremos el sistema
+
+$$\left\{\begin{matrix}
+x &+&2y&+&z&=&1\\
+ &&2y&+&3z&=&-5\\
+x &+&4y&+&4z&=&3
+\end{matrix}\right.$$
+
+Tenemos que $$A = \begin{pmatrix}
+1&2&1\\
+0&2&3\\
+1&4&4
+\end{pmatrix}$$
+
+la cual tiene rango 2:
+
+$$A = \begin{pmatrix}
+1&2&1\\
+0&2&3\\
+1&4&4
+\end{pmatrix}\sim f_3-f_1\begin{pmatrix}
+1&2&1\\
+0&2&3\\
+0&2&3
+\end{pmatrix}\sim f_3-f_2\begin{pmatrix}
+1&2&1\\
+0&2&3\\
+0&0&0
+\end{pmatrix}$$
+
+## Ejemplo 5{.example}
+
+Mientras que la matriz ampliada del sistema tiene rango 3:
+
+$$(A|B) = \begin{pmatrix}
+1&2&1&|&1\\
+0&2&3&|&-5\\
+1&4&4&|&3
+\end{pmatrix}\sim f_3-f_1\begin{pmatrix}
+1&2&1&|&1\\
+0&2&3&|&-5\\
+0&2&3&|&2
+\end{pmatrix}\sim f_3-f_2\begin{pmatrix}
+1&2&1&|&1\\
+0&2&3&|&-5\\
+0&0&0&|&7
+\end{pmatrix}$$
+
+Con lo cual, por el teorema de Rouché-Frobenius, concluimos que el sistema es incompatible.

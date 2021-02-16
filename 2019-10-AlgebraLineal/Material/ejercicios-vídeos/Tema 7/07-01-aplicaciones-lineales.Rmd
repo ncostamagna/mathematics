@@ -1,0 +1,134 @@
+---
+title: "Ejercicios"
+subtitle: "Aplicaciones Lineales"
+author: "Curso Álgebra Lineal"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+## Pregunta 1
+
+Sea $f:\mathbb{R}_n[x]\longrightarrow\mathbb{R}_n[x]$ definida por $f(p(x)) = p(x+1)-p(x)$. Demuestra que $f$ es lineal.
+
+Calcula la matriz de $f$ en la base canónica. Calcula también dimensión y bases de la imagen y el núcleo de $f$.
+
+## Pregunta 2
+
+¿Existe alguna aplicación lineal $f:\mathbb{R}^3\longrightarrow\mathbb{R}^2$ tal que
+
+$$f(1,0,0) = (1,1)\\ f(1,1,0) = (1,0)\\ f(1,1,1) = (1,-1)\\ f(-1,0,1) = (-1,2)$$?
+
+En caso de existir, ¿es única?
+
+## Pregunta 3
+
+Encuentra la matriz de la aplicación lineal $f:\mathbb{R}^3\longrightarrow \mathbb{R}^4$ definida por 
+
+$$f(x,y,z) = (a_0x+b_0y+c_0z,a_1x+b_1y+c_1z,a_2x+b_2y+c_2z,a_3x+b_3y+c_3z)$$
+
+con respecto de las bases canónicas. Generaliza para el caso $\mathbb{R}^n$ y $\mathbb{R}^m$
+
+## Pregunta 4
+
+Sea $f:\mathbb{R}^3\longrightarrow \mathbb{R}^4$ definido por 
+
+$$f(1,0,0) = (1,1,0,1),\ f(0,1,0) = (-1,2,0,0),\ f(0,0,1) = (0,3,0,1)$$
+
+Encuentra la matriz asociada a $f$ con respecto a las bases $B = \{(1,2,1),(0,1,2),(0,0,1)\}$ y $B' = \{(2,1,0,1),(0,2,0,0),(0,0,1,0),(0,0,0,3)\}$
+
+## Pregunta 5
+
+Considera la base de $\mathbb{R}^3$, $B = \{(1,1,1),(0,0,-2),(0,1,2)\}$ y los subespacios vectoriales
+
+$$F = \{(x,y,z)\ |\ 2x+y-z =0,\ x-y+2z =0\}$$
+$$G = \{(x,y,z)\ |\ 2x-3y+4z =0\}$$
+
+donde las coordenadas $(x,y,z)$ están referidas a la base $B$. Sea $f:\mathbb{R}^3\longrightarrow\mathbb{R}^3$ un endomorfismo tal que $f(x) = 2x$ para todo $x\in F$ y $f(x) = 3x$ para todo $x\in G$. Calcula la matriz de $f$ con respecto a la base canónica. 
+
+## Pregunta 6
+
+Sea $f:\mathbb{R}^3\longrightarrow \mathbb{R}^3$ el endomorfismo que tiene por matriz en la base canónica
+
+$$\begin{pmatrix}
+0 & -1 & 1\\
+1 & 0 & -1\\
+-1 & 1 & 0
+\end{pmatrix}$$
+
+Encuentra las bases del núcleo y la imagen de $f$ y demuestra que son suplementarios. ¿Se verifica $f^2 = f$?
+
+## Pregunta 7
+
+Estudia, según los valores del parámetro $\alpha$ (da la dimensión y bases de $\ker(f)$ e $\text{Im}(f)$) la familia de endomorfismos de $\mathbb{R}^3$ que en la base canónica tienen por matriz
+
+$$\begin{pmatrix}
+\alpha & 1 & \alpha\\
+1 & \alpha & 0\\
+1 & \alpha & 1
+\end{pmatrix}$$
+
+## Pregunta 8
+
+Sea $f:\mathbb{R}^3\longrightarrow \mathbb{R}^2$ la aplicación lineal definida por $f(x,y,z) = (-2x+y,3z)$. Encuentra la matriz asociada a $f$ con respecto de las bases
+
+- $B = \{(1,2,-1),(0,1,0),(3,1,1)\}$ y $B' = \{(0,2),(-1,1)\}$
+- $C =1 \{(1,1,1),(0,1,0),(0,0,1)\}$ y $C' = \{f(1,1,1),f(0,1,0)\}$
+
+## Pregunta 9
+
+Sea $E$ el subconjunto de $\mathcal{M}_2(\mathbb{R})$ dado por las matrices de la forma
+
+$$\begin{pmatrix}
+a & b+c\\
+-b+c & a
+\end{pmatrix}$$
+
+- Demuestra que $E$ es un subespacio vectorial de $\mathcal{M}_2(\mathbb{R})$ y encuentra la dimensión y una base.
+- Demuestra que la aplicación $f: E\longrightarrow E$ dada por
+
+$$f\left(\begin{matrix}a & b+c\\ -b+c & a\end{matrix}\right) = \begin{pmatrix}
+0 & 2b+c\\
+-2b+c & 0\end{pmatrix}$$
+
+es lineal y encuentra la matriz de $f$ con respecto a la base encontrada en el apartado $a$. Encuentra también el núcleo y la imagen de $f$.
+
+## Pregunta 10
+
+Estudia cuáles de las siguientes aplicaciones son lineales y para las que no lo sean, di cuáles son inyectivas y cuáles exhaustivas
+
+- $f:\mathbb{R}^2\longrightarrow\mathbb{R}^3$ dada por $f(x,y) = (x+y,0,2y)$
+- $f:\mathbb{R}^3\longrightarrow\mathbb{R}^3$ dada por $f(x,y,z) = (xz,-y,-2z)$
+- $f:\mathbb{R}^3\longrightarrow\mathbb{R}$ dada por $f(x,y,z) = xyz$
+- $f:\mathbb{R}^3\longrightarrow\mathbb{R}^2$ dada por $f(x,y,z) = (x,z)$
+
+## Pregunta 11
+
+Considera las siguientes aplicaciones $f_i:\mathbb{R}^3\longrightarrow\mathbb{R}^3$
+
+$$f_1(x,y,z) = (y+z,x+z,x+z)$$
+$$f_2(x,y,z) = (3x,2y,x+y+z)$$
+$$f_3(x,y,z) = (x-y,x+y,z)$$
+$$f_4(x,y,z) = (x-y-z,y-x-z,z-x-y)$$
+$$f_5(x,y,z) = (x+y+2z,2x-z,x-y-3z)$$
+
+- Demuestra que todas ellas son lineales
+- Encuentra de cada una la matriz asociada con respecto a la base canónica, tanto de partida como de llegada.
+- Determina cuáles de ellas son monomorfismo y cuáles epimorfismos
+- Encuentra el núcleo de $f_5$
+- Encuentra la matriz de la composición $f_3\circ f_2$
+- Encuentra la matriz de $2f_3-f_2$
+
+
+## Pregunta 12
+
+Si $e_1,e_2,e_3$ representa la base canónica de $\mathbb{R}^3$, sea $f:\mathbb{R}^3\longrightarrow \mathbb{R}^3$ la aplicación lineal definida por
+
+$$f(e_1) = ae_1+e_2+3e_3$$
+$$f(e_2) = e_1+3e_2+10e_3$$
+$$f(e_3) = -e_1+e_2+4e_3$$
+
+- Encuentra, según los valores del parámetro $a$, bases del núcleo y la imagen de $f$
+- Para valores de $a$ en que $\ker(f)\ne 0$, encuentra para qué valores de $b$, el vector $(1,b,-4)$ tiene antiimagen y calcúlalas todas.
