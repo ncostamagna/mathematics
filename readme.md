@@ -3,6 +3,8 @@
     - [Tipo de matrices](#tipo-de-matrices)
     - [Operaciones de matrices](#operaciones-de-matrices)
     - [Propiedades de matrices](#propiedades-de-matrices)
+    - [Matriz traspuesta](#matriz-traspuesta)
+    - [Propiedades Matriz Cuadrada](#propiedades-matriz-cuadrada)
 
 
 # Matrices
