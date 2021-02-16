@@ -167,7 +167,8 @@ Divisores de cero. El producto de que 2 matrices den cero, no implican que A o B
 ![calc](images/4.png)<br />
 
 ### Traspuesta de una suma
-![calc](https://latex.codecogs.com/png.latex?(A&plus;B)^{t}&space;=&space;A^{t}&space;&plus;&space;B^{t})<br />
+
+![calc](https://latex.codecogs.com/png.latex?(A&plus;B)^{t}&space;=&space;A^{t}&space;&plus;&space;B^{t}) <br />
 
 ![calc](https://latex.codecogs.com/png.latex?(\sum_{i=1}^{r})^{t}=\sum_{i=1}^{r}A_{i}^{t})<br />
 
