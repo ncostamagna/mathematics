@@ -5,6 +5,9 @@
     - [Propiedades de matrices](#propiedades-de-matrices)
     - [Matriz traspuesta](#matriz-traspuesta)
     - [Propiedades Matriz Cuadrada](#propiedades-matriz-cuadrada)
+    - [Matrices escalonadas](#matrices-escalonadas)
+    - [Rango](#rango)
+    - [Matriz Inversa](#matriz-inversa)
 
 
 # Matrices
@@ -194,3 +197,31 @@ Matriz multiplicada por su inversa da la identidad, sino es una matriz **Singula
 ### Ortogonal
 Es regular y ademas su inversa coincide con su traspuesta<br />
 ![calc](images/8.png)
+
+## Matrices escalonadas
+
+### Escalonada Por fila
+- El primer elemento no nulo de cada fila , denominado pivote, esta a la derecha del pivote de la fila superior.
+- Las filas nulas estan en la parte inferior de la matriz
+![calc](images/9.png)<br/>
+Este ejemplo tiene en el primero como pivote el 2, 1 y al final el 2 de la 4ta fila (porque hay un cero en la 3ra)<br /><br />
+
+### Escalonada Reducida por fila
+- Los pivotes son todos 1s
+- Todos los elementos que estan en la misma columna del pivote son nulos
+![calc](images/10.png)<br/>
+
+## Rango
+Se denomina rango de A y se denota como rg(A), al numero de filas no nulas que tienen su unica matriz escalonada por filas equivalentes<br />
+![calc](images/11.png)<br/>
+Rango 3, porque tiene 3 filas y ninguna de ellas es todo cero<br /><br />
+Si tenemos una matriz no escalonada tenemos que hacerla escalonada, para saber su rango<br/>
+![calc](images/12.png)<br/>
+
+## Matriz Inversa
+- A es una Matriz cuadrada
+- A es invertible
+- rg(A) = n (rango maximo, no te queda ninguna fila o columna en cero)
+- La matriz escalonada reducida por filas equivale a A es la matriz identidad In<br />
+Ejemplo de como calcular de inversa de una matriz<br />
+![calc](images/13.png)<br/>
