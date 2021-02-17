@@ -133,7 +133,7 @@ Suma de los elementos de la diagonal principal
 
 ## Propiedades de matrices
 
-### Conmutativa
+### Conmutativa (Solo por SUMA)
     A + B = B + A
 
 ### Asociativa
@@ -161,7 +161,7 @@ Multiplicada por la Identidad<br />
 ![calc](images/3.png)<br />
 
 ### Excepciones
-No se cumple la propiedad conmutativa<br />
+No se cumple la propiedad conmutativa (para producto, salvo en muy pocos casos)<br />
 No se cumple la ley de simplificacion. 
 
     AB = AC => B <> C
