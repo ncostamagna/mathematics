@@ -11,6 +11,7 @@
 
 
 # Matrices
+**Octave es el mas preparado para trabajar con matrices**
 
                 3
           [ a b c ]
