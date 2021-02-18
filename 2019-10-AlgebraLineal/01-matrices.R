@@ -114,10 +114,8 @@ mtx.exp(A,4) ## con el package Biodem
 A%^%4 ## con el package expm
 
 ## Rango e inversa
-
-qr(A)$rank # Rango
-
-
-solve(M) # Inversa (aproximada), tiene que tener inversa
-round(M%*%solve(M)) # Identidad = M * Mi
-round(solve(M)%*%M)
+Z = rbind(c(1,2,3,23,12),c(4,5,6,34,12),c(7,8,9,45,23),c(21,32,13,231,112),c(34,12,1,3,2))
+qr(Z)$rank # Rango
+solve(Z) # Inversa (aproximada), tiene que tener inversa
+round(Z%*%solve(Z)) # Identidad = M * Mi
+round(solve(Z)%*%Z)

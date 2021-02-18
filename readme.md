@@ -8,6 +8,9 @@
     - [Matrices escalonadas](#matrices-escalonadas)
     - [Rango](#rango)
     - [Matriz Inversa](#matriz-inversa)
+- [Ecuaciones lineales](#ecuaciones-lineales)
+    - [Ecuaciones lineales](#ecuaciones-lineales)
+    - [Metodo Gauss](#metodo-gauss)
 
 
 # Matrices
@@ -226,3 +229,36 @@ Si tenemos una matriz no escalonada tenemos que hacerla escalonada, para saber s
 - La matriz escalonada reducida por filas equivale a A es la matriz identidad In<br />
 Ejemplo de como calcular de inversa de una matriz<br />
 ![calc](images/13.png)<br/>
+
+# Ecuaciones lineales
+![calc](images/14.png)<br/>
+Ecuaciones lineales, siempre de grado 1, solo un valor x<br />
+
+### Sistema Homogeneo
+Todas las ecuaciones son igual a cero<br />}
+![calc](images/15.png)<br/>
+
+### Forma Matricial
+Todo sistema de ecuaciones lineales se puede escribir de forma matricial<br />
+![calc](images/16.png)<br/>
+
+### Matriz Ampliada del sistema
+![calc](images/17.png)<br/>
+
+### Teorema Rouche-Frobenius
+![calc](images/18.png)<br/>
+![calc](images/19.png)<br/>
+![calc](images/21.png)<br/>
+
+### Sistemas Equivalentes
+![calc](images/20.png)<br/>
+
+## Metodo Gauss
+![calc](images/22.png)<br/>
+
+### Metodo Gauss - sistema compatible determinado
+![calc](images/23.png)<br/>
+sumamos valores para que nos queden ceros en la primera fila <br />
+![calc](images/24.png)<br/>
+![calc](images/25.png)<br/>
+![calc](images/26.png)<br/>
