@@ -262,3 +262,10 @@ sumamos valores para que nos queden ceros en la primera fila <br />
 ![calc](images/24.png)<br/>
 ![calc](images/25.png)<br/>
 ![calc](images/26.png)<br/>
+
+### Metodo Gauss - sistema compatible indeterminado
+![calc](images/27.png)<br/>
+![calc](images/28.png)<br/>
+![calc](images/29.png)<br/>
+![calc](images/30.png)<br/>
+![calc](images/31.png)<br/>
