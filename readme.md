@@ -279,8 +279,8 @@ en lugar de multiplicar filas y columnas voy a multiplicar bloques de matrices<b
 ![calc](images/32.png)<br/>
 ![calc](images/33.png)<br/>
 <img src="images/34.png" width=50%/><br/>
-<img src="images/35.png" width=50%/><br/>
-<img src="images/36.png" width=50%/><br/>
+<img src="images/35.png" width=55%/><br/>
+<img src="images/36.png" width=30%/><br/>
 En realidad tiene sentido hacer esto cuando una de las matrices que divido es la identidad o la nula<br />
 ![calc](images/37.png)<br/>
 A, B o C por la Identidad me da A, B o C. Es como un 1<br />
