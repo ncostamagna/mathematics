@@ -11,6 +11,7 @@
 - [Ecuaciones lineales](#ecuaciones-lineales)
     - [Ecuaciones lineales](#ecuaciones-lineales)
     - [Metodo Gauss](#metodo-gauss)
+- [Producto por bloques y Factorizacion](#producto-por-bloques-y-factorizacion)
 
 
 # Matrices
@@ -269,3 +270,26 @@ sumamos valores para que nos queden ceros en la primera fila <br />
 ![calc](images/29.png)<br/>
 ![calc](images/30.png)<br/>
 ![calc](images/31.png)<br/>
+
+# Producto por bloques y Factorizacion
+
+## Producto por bloques
+Multilicar matrices de orden elevado que tardarian mucho tiempo en procesarse, odemos dividir las matrices por bloques y realizar el producto por bloques entre la matriz A y B, 
+en lugar de multiplicar filas y columnas voy a multiplicar bloques de matrices<br />
+![calc](images/32.png)<br/>
+![calc](images/33.png)<br/>
+![calc](images/34.png)<br/>
+![calc](images/35.png)<br/>
+![calc](images/36.png)<br/>
+En realidad tiene sentido hacer esto cuando una de las matrices que divido es la identidad o la nula<br />
+![calc](images/37.png)<br/>
+A, B o C por la Identidad me da A, B o C. Es como un 1<br />
+Siempre vamos a tratar de tener bloques de 0 o Identidad en las matrices para que sean mas faciles de procesar<br />
+![calc](images/38.png)<br/>
+
+## Factorizacion LU
+
+¿Cuando una matriz puede escribisre como producto de una matriz triangular inferior (L) y triangular superior (U).<br />
+![calc](images/39.png)<br/>
+![calc](images/40.png)<br/>
+![calc](images/41.png)<br/>
