@@ -293,3 +293,14 @@ Siempre vamos a tratar de tener bloques de 0 o Identidad en las matrices para qu
 ![calc](images/39.png)<br/>
 ![calc](images/40.png)<br/>
 ![calc](images/41.png)<br/>
+
+### Lu sin Permutacion
+<img src="images/42.png"/><br/>
+<img src="images/43.png"><br/>
+Hasta ahora obtuvimos la U, ahora tenemos que obtener la L<br />
+<img src="images/44.png"><br/>
+<img src="images/45.png"><br/>
+
+### Lu con Permutacion
+<img src="images/46.png"/><br/>
+<img src="images/47.png"/><br/>
