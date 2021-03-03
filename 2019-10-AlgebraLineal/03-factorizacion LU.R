@@ -70,5 +70,3 @@ sistema$x # solucion sistema U*d¨
 
 
 
-
-
