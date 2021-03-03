@@ -16,7 +16,7 @@
     - [Factorizacion LU](#factorizacion-lu)
     - [Lu sin Permutacion](#lu-sin-permutacion)
     - [Lu con Permutacion](#lu-con-permutacion)
-
+- [Determinantes](#determinantes)
 
 # Matrices
 **Octave es el mas preparado para trabajar con matrices**
@@ -313,3 +313,16 @@ Hasta ahora obtuvimos la U, ahora tenemos que obtener la L<br />
 <img src="images/49.png"/><br/>
 <img src="images/50.png"/><br/>
 <img src="images/51.png"/><br/>
+
+# Determinantes
+
+Solo para matrices cuadradas<br />
+<img src="images/52.png"/><br/>
+Para sacar alfa11 por ejemplo, tachamos la fila 1 y la columna 1, nos queda a22<br />
+<img src="images/53.png"/><br/>
+
+**Matriz orden 3**<br />
+<img src="images/54.png"/><br/>
+<img src="images/55.png"/><br/>
+<img src="images/56.png"/><br/>
+<img src="images/57.png"/><br/>

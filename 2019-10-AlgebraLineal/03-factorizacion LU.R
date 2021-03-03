@@ -65,8 +65,4 @@ sistema$U # triangular superior
 
 
 sistema$d # solucion sistema L*d
-sistema$x # solucion sistema U*d¨
-
-
-
-
+sistema$x # solucion sistema U*d
