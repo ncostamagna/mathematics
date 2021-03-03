@@ -12,6 +12,10 @@
     - [Ecuaciones lineales](#ecuaciones-lineales)
     - [Metodo Gauss](#metodo-gauss)
 - [Producto por bloques y Factorizacion](#producto-por-bloques-y-factorizacion)
+    - [Producto por bloques](#producto-por-bloques)
+    - [Factorizacion LU](#factorizacion-lu)
+    - [Lu sin Permutacion](#lu-sin-permutacion)
+    - [Lu con Permutacion](#lu-con-permutacion)
 
 
 # Matrices
