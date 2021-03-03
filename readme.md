@@ -304,3 +304,8 @@ Hasta ahora obtuvimos la U, ahora tenemos que obtener la L<br />
 ### Lu con Permutacion
 <img src="images/46.png"/><br/>
 <img src="images/47.png"/><br/>
+<img src="images/48.png"/><br/>
+
+<img src="images/49.png"/><br/>
+<img src="images/50.png"/><br/>
+<img src="images/51.png"/><br/>
