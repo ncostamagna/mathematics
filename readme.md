@@ -326,3 +326,32 @@ Para sacar alfa11 por ejemplo, tachamos la fila 1 y la columna 1, nos queda a22<
 <img src="images/55.png"/><br/>
 <img src="images/56.png"/><br/>
 <img src="images/57.png"/><br/>
+
+## Propiedades
+Puedo sacar factor comun por filas o columnas<br />
+<img src="images/58.png"/><br/>
+Si hay un vector de sumas, se generan 2 matrices, uno con el primer numero y la otra con el segundo<br />
+<img src="images/59.png"/><br/>
+<img src="images/60.png"/><br/>
+<img src="images/61.png"/><br/>
+<img src="images/62.png"/><br/>
+Es cero cuando en este caso, la suma de la primera y segundo fila me da la tercera<br />
+<img src="images/63.png"/><br/>
+Cuando se le suma una combinacion lineal, 1 + 2 + 3 = 6<br />
+<img src="images/64.png"/><br/>
+
+## Adjuntos y menores complementarios
+<img src="images/65.png"/><br/>
+me conviene ponerle el menos en este orden: 1, 2, 3, 6, 5, 4, 7, 8, 9
+<img src="images/66.png"/><br/>
+
+## Calculos
+<img src="images/67.png"/><br/>
+<img src="images/68.png"/><br/>
+<img src="images/69.png"/><br/>
+
+## Determinante de Vandermonde
+<img src="images/70.png"/><br/>
+<img src="images/71.png"/><br/>
+Hay un error en la imagen, no es d - d, es d - b<br />
+<img src="images/72.png"/><br/>
