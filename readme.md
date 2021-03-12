@@ -17,6 +17,11 @@
     - [Lu sin Permutacion](#lu-sin-permutacion)
     - [Lu con Permutacion](#lu-con-permutacion)
 - [Determinantes](#determinantes)
+    - [Propiedades](#propiedades)
+    - [Adjuntos y menores complementarios](#adjuntos-y-menores-complementarios)
+    - [Calculos](#calculos)
+    - [Determinante de Vandermonde](#determinante-de-vandermonde)
+    - [Determinantes](#determinantes)
 
 # Matrices
 **Octave es el mas preparado para trabajar con matrices**
@@ -355,3 +360,18 @@ me conviene ponerle el menos en este orden: 1, 2, 3, 6, 5, 4, 7, 8, 9
 <img src="images/71.png"/><br/>
 Hay un error en la imagen, no es d - d, es d - b<br />
 <img src="images/72.png"/><br/>
+
+## Determinantes
+Los determinantes los necesito para calcular facilmente la inversa o para resolver sistemas de ecuaciones lineales<br/>
+Si el Det no es 0, tiene inversa<br/>
+<img src="images/73.png"/><br/>
+<img src="images/74.png"/><br/>
+<img src="images/75.png"/><br/>
+Para culcuar las matricex inversas se utiliza el metodo de gause, para un ordenador es mas facil que calcular varios bloques de una matriz y realizzar mas operaciones<br />
+
+## Cramer
+<img src="images/76.png"/><br/>
+<img src="images/77.png"/><br/>
+<img src="images/78.png"/><br/>
+<img src="images/79.png"/><br/>
+<img src="images/80.png"/><br/>
