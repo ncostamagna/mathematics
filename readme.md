@@ -375,3 +375,45 @@ Para culcuar las matricex inversas se utiliza el metodo de gause, para un ordena
 <img src="images/78.png"/><br/>
 <img src="images/79.png"/><br/>
 <img src="images/80.png"/><br/>
+
+# Vectores
+
+## Vectores Fijos
+Es un par fijo de P (Origen) y Q (Extremo)<br />
+<img src="images/81.png"/><br/>
+<img src="images/82.png"/><br/>
+<img src="images/83.png"/><br/>
+Caracteristicas de un vector fijo:<br />
+
+- **Origen**: Punto donde empieza el vector
+- **Modulo**: Longitud, cuanto largo es
+- **Direccion**: Direccion de la recta, hacia donde mira el vector, donde esta la recta
+- **Sentido**: La punta del vector hacia que lado tiene que ir
+
+## Vectores Libres
+Una representacion de un conjunto infinito de vectores fijos<br />
+<img src="images/84.png"/><br/>
+<img src="images/85.png"/><br/>
+Caracteristicas de un vector libre:<br />
+
+- **Modulo**: Longitud, cuanto largo es
+- **Direccion**: Viene dado por el angulo que forma el vector con la direccion positiva del eje
+- **Sentido**: La punta del vector hacia que lado tiene que ir
+
+## Operaciones de un Vector
+
+### Suma
+Debe tener el mismo orden, el mismo valor de n<br />
+<img src="images/86.png"/><br/>
+Su sumo el vector U y el vector V quedaria asi<br/>
+<img src="images/87.png"/><br/>
+Si quisieramos sumar varios vectores<br/>
+<img src="images/88.png"/><br/>
+
+### Resta
+Debe tener el mismo orden, el mismo valor de n<br />
+<img src="images/89.png"/><br/>
+Si resto el vector U y el vector V es como hacer<br/>
+w + v = u<br/>
+<img src="images/90.png"/><br/>
+<img src="images/91.png"/><br/>
