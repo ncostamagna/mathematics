@@ -417,3 +417,19 @@ Si resto el vector U y el vector V es como hacer<br/>
 w + v = u<br/>
 <img src="images/90.png"/><br/>
 <img src="images/91.png"/><br/>
+
+
+### Producto por Escalar
+<img src="images/92.png"/><br/>
+
+### Combinacion Lineal
+<img src="images/93.png"/><br/><br/><br/>
+<img src="images/94.png"/><br/>
+<img src="images/95.png"/><br/>
+
+## Propiedades de un Vector
+
+- De los vecores, salen vectores, no puede salir otra cosa
+- Se toman un vector y un escalar, el resultado es otro vector<br />
+
+<img src="images/96.png"/><br/>
