@@ -145,6 +145,12 @@ Suma de los elementos de la diagonal principal
 
 ![calc](https://latex.codecogs.com/png.latex?tr(A)&space;=&space;a_{11}&space;&plus;&space;a_{22}&space;&plus;&space;...&space;&plus;&space;a_{nn}&space;=&space;\sum_{i=1}^{n})<br />
 
+### Division
+Las divisiones en las matrices no existen, para realizar la division de una matriz A dividido una matriz B, debo hacer A multiplicado la inversa de B
+<br />
+<img src="https://latex.codecogs.com/svg.image?1+sin^2(x)" /><br />
+
+
 ## Propiedades de matrices
 
 ### Conmutativa (Solo por SUMA)
@@ -433,3 +439,6 @@ w + v = u<br/>
 - Se toman un vector y un escalar, el resultado es otro vector<br />
 
 <img src="images/96.png"/><br/>
+
+# Espacio Vectorial
+<img src="images/97.png"/><br/>
